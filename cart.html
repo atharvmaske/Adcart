@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Adcart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <img width="150px" src="img/d1.png" alt="">
+        <p style="width: 39%; text-align: center;
+        color: white; font-size: 30px;">   <i class="fa-solid fa-cart-shopping" style="color: #ffffff; margin-left: -29px; "></i> Cart</p>
+        </div>
+        <div class="header">
+        <a href="">Signin</a>
+        <a href="order.html">Orders</a>
+        <div style="display: block; width: 45%;">
+            <a href="home.html">Home</a>       
+        </div>
+    </div>
+    </nav>
+<div class="main-div">
+        <div class="main">
+            <p id="status">Cart Is Empty</p>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Cart items  -->
+                    </tbody>
+                </table>
+    
+            </div>
+        </div>
+
+        <div class="pay">
+            <Button class="btn btnn">Go To Checkout</Button>
+            <Button class="btn" style="background-color: #ffffff;"> <img width="40px" src="img/gpay.png" alt=""></Button>
+            <div class="pay-detail">
+                <p style=" font-size: 19px; font-weight: 700; padding-top: 29px;">Order Summery</p>
+                <div style="display: flex; width: 100%;justify-content: space-between;">
+                    <p>Subtotal</p>
+                    <div class="payment">
+                    <p class="rup">₹</p>
+                    <p class="amt">Amount</p>
+                </div>
+                </div>
+
+                <div style="display: flex;justify-content:space-between; ">
+                    <p>Delivery charges</p>
+                    <div class="payment">
+                        <p class="rup">₹</p>
+                    <p class="amt">Price</p>
+                </div>
+              </div>
+
+                <div style="display: flex;justify-content:space-between; ">
+                    <p>Estimated Total</p>
+                    <div class="payment">
+                        <p class="rup">₹</p>
+                    <p class="amt">Price</p>
+                </div>
+              </div>
+            </div>
+            <p style="margin-top: 20px; cursor: pointer; padding-bottom: 29px;">Have a Promo code?</p>  
+        </div>
+</div>
+<div class="suggest">
+    <p class="suggest-name">Adcart's Top picks for you</p>
+    <div class="suggestion">
+        <div class="sug-item">
+            <img src="img/phones/s21 fe.jpg" alt="">
+                    <div class="info">
+                        <p class="name">Samsung S21FE 5G</p>
+                        <p class="price">₹ 39,999</p>
+                        <p class="spec">8 | 128 Gb</p>
+                    </div>
+                    <Button onclick="addc()">Add to cart</Button>
+        </div>
+       
+    </div>
+</div>
+</body>
+</html>

@@ -10,326 +10,351 @@
 </head>
 <body>
         <nav>
-            <img width="150px" src="img/d.png" alt="">
+            <a href="#">
+            <img width="190px" src="img/d1.png" alt="">
+             </a>
             <div  class="input">
-            <input class="input-field" type="text" placeholder="Search">
+            <input class="input-field" id="search-input" type="text" placeholder="Search">
             <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000; padding-left: 5px;"></i>
             </div>
             <div class="header">
             <a href="">Signin</a>
-            <a href="">Orders</a>
-            <div style="display: block;">
-                <a href="">Cart</a>                <i class="fa-solid fa-cart-shopping" style="color: #000000; "></i>
+            <a href="order.html">Orders</a>
+            <a href="cart.html">Cart          
+                <div style="display: block; margin-left: -30px;">    
+            <i class="fa badge fa-lg" id="cart-icon">&#xf07a;</i>
+
+            </a>
+            </div>
             </div>
         </div>
         </nav>
         <div class="body">
-            <div class="categoey">
+            <div class="category" category="all">
                 <img width="50px" style="border-radius: 50%;" src="img/choice/all.png" alt="">
                 <p>All</p>
             </div>
-            <div class="categoey">
+            <div class="category" category="mobile">
                 <img width="50px" src="img/choice/phones.jpeg" alt="">
                 <p>Mobiles</p>
             </div>
-            <div class="categoey">
+            <div class="category" category="fashion">
                 <img width="50px" src="img/choice/fashion.jpeg" alt="">
                 <p>Fashion</p>
             </div>
-            <div class="categoey">
+            <div class="category" category="laptop">
                 <img width="50px" src="img/choice/victus.jpeg" alt="">
                 <p>Laptop</p>
             </div>
-            <div class="categoey">
+            <div class="category" category="book">
                 <img width="50px" src="img/choice/book.jpeg" alt="">
                 <p>Books</p>
             </div>
-            <div class="categoey">
+            <div class="category" category="tv">
                 <img width="50px" src="img/choice/sam tv 1.webp" alt="">
                 <p>TV</p>
             </div>
             
-            <div class="categoey">
+            <div class="category"category="Accesories">
                 <img width="50px" src="img/choice/sam charg.jpeg" alt="">
                 <p>Accessories </p>
             </div>
             </div>
 
 
-            <div class="items">
-                <div class="item">
+            <div class="items" id="item-container">
+                <div class="item" category="mobile" >
                     <img src="img/phones/s21 fe.jpg" alt="">
                     <div class="info">
                         <p class="name">Samsung S21FE 5G</p>
                         <p class="price">₹ 39,999</p>
                         <p class="spec">8 | 128 Gb</p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="mobile" >
                     <img src="img/phones/15promax.jpeg" alt="">
                     <div class="info">
                         <p class="name">Iphone 15 pro max</p>
                         <p class="price">₹ 1,49,999</p>
                         <p class="spec"> 128 Gb</p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="mobile" >
                     <img src="img/phones/s23 ultra.jpg" alt="">
                     <div class="info">
                         <p class="name">Samsung S23 Ultra 5G</p>
                         <p class="price">₹ 1,39,999</p>
                         <p class="spec">12 | 256 Gb</p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="mobile" >
                     <img src="img/phones/pixell7pro.jpeg" alt="">
                     <div class="info">
                         <p class="name">Google Pixel 7pro</p>
                         <p class="price">₹ 70,999</p>
                         <p class="spec">8 | 128 Gb</p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
   
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/men/9.jpeg" alt="">
                     <div class="info">
                         <p class="name">Cream Solid Ankle-Length Mid Rise Casual Men Straight Fit Trousers</p>
                         <p class="price">₹ 999</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/men/10.jpeg" alt="">
                     <div class="info">
                         <p class="name">Spykar Men's Cotton Blend Slim T-Shirts</p>
                         <p class="price">₹ 499</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/men/13.jpeg" alt="">
                     <div class="info">
                         <p class="name">Light Wash Relaxed-fit jeans with five pockets</p>
                         <p class="price">₹ 1,999</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/men/15.jpg" alt="">
                     <div class="info">
                         <p class="name">Blazer Men Fashion Slim Male Suits Casual Solid Color Masculine Blazer</p>
                         <p class="price">₹ 3,999</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/women/9.webp" alt="">
                     <div class="info">
                         <p class="name">DANVOUY Womens T Shirt Casual Cotton Short</p>
                         <p class="price">₹ 1,999</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/women/4.webp" alt="">
                     <div class="info">
                         <p class="name">Oversized Double Blazer</p>
                         <p class="price">₹ 2,999</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/women/10.webp" alt="">
                     <div class="info">
                         <p class="name">MBJ Women's Solid Short Sleeve Boat Neck V</p>
                         <p class="price">₹ 999</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/women/11.webp" alt="">
                     <div class="info">
                         <p class="name">BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats</p>
                         <p class="price">₹ 4,999</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/women/13.webp" alt="">
                     <div class="info">
                         <p class="name">Opna Women's Short Sleeve Moisture</p>
                         <p class="price">₹ 899</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="laptop" >
                     <img src="img/lap/victus.jpeg" alt="">
                     <div class="info">
                         <p class="name">HP Victus</p>
                         <p class="price">₹ 79,999</p>
                         <p class="spec">i5 12th gen | 8 | 512gb | Nvidia RTX 3050</p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="laptop" >
                     <img src="img/lap/macbook.png" alt="">
                     <div class="info">
                         <p class="name">MacBook Air - Midnight</p>
                         <p class="price">₹ 1,11,899</p>
                         <p class="spec"> M2 chip | 8 | 256 gb | 8‑core GPU</p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="laptop" >
                     <img src="img/lap/book 3.jpeg" alt="">
                     <div class="info">
                         <p class="name">Galaxy Book3 Pro 360</p>
                         <p class="price">₹ 1,55,899</p>
                         <p class="spec">i5 13th gen | 16 | 512gb | Iris® Xe Graphics</p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="laptop" >
                     <img src="img/lap/dell.jpeg" alt="">
                     <div class="info">
                         <p class="name">Dell Inspiration 3000</p>
                         <p class="price">₹ 45,899</p>
                         <p class="spec">i5 12th gen | 8 | 512gb </p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="laptop" >
                     <img src="img/lap/lenevo.jpeg" alt="">
                     <div class="info">
                         <p class="name">lenevo Yoga Book</p>
                         <p class="price">₹ 1,55,899</p>
                         <p class="spec">i5 13th gen | 8 | 512gb | Nvidia RTX 3060</p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/men puese/ysl.jpg" alt="">
                     <div class="info">
                         <p class="name">SAINT LAURENT Wallet</p>
                         <p class="price">₹ 25,899</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/women purse/ysl.jpeg" alt="">
                     <div class="info">
                         <p class="name">Womens Saint Laurent Purse</p>
                         <p class="price">₹ 1,01,899</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/women purse/dior.jpeg" alt="">
                     <div class="info">
                         <p class="name">LARGE DIOR BOOK TOTE</p>
                         <p class="price">₹ 3,15,000</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
                 
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/women purse/channel.jpeg" alt="">
                     <div class="info">
                         <p class="name">CHANEL Diana 25 Medium Matelasse Lambskin </p>
                         <p class="price">₹ 5,64,849</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="fashion" >
                     <img src="img/women purse/gucci.jpeg" alt="">
                     <div class="info">
                         <p class="name">Womens Saint Laurent Purse</p>
                         <p class="price">₹ 95,000</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="book" >
                     <img src="img/book/naruto.jpeg" alt="">
                     <div class="info">
                         <p class="name">Naruto Volume 1 | Masashi Kishimoto</p>
                         <p class="price">₹ 399</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="book" >
                     <img src="img/book/onepiece.jpeg" alt="">
                     <div class="info">
                         <p class="name">One Piece Volume 1 | Eiichiro Oda</p>
                         <p class="price">₹ 389</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="book" >
                     <img src="img/book/dbz.jpeg" alt="">
                     <div class="info">
                         <p class="name">Dragon Ball Z, Vol 8 | Akira Toriyama</p>
                         <p class="price">₹ 599</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="book" >
                     <img src="img/book/bleach.jpeg" alt="">
                     <div class="info">
                         <p class="name">Bleach, Vol. 19 | Tite Kubo</p>
                         <p class="price">₹ 409</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
 
-                <div class="item">
+                <div class="item" category="tv" >
                     <img src="img/tv/tv2.webp" alt="">
                     <div class="info">
                         <p class="name">Samsung CU8000 Crystal UHD 4K Smart TV</p>
                         <p class="price">₹ 47,909</p>
                         <p class="spec"> PurColor | Smart Hub | Smart Hub</p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="tv" >
                     <img src="img/tv/tv4.webp" alt="">
                     <div class="info">
                         <p class="name">Sony X77L 4K HDR LED Google TV</p>
                         <p class="price">₹ 42,000</p>
                         <p class="spec"> LCD Ultra HD 4K |  Google TV</p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="Accesories" >
                     <img src="img/Accesories/sam charg.jpeg" alt="">
                     <div class="info">
                         <p class="name">Samsung Original 25W USB Travel Adapter for Cellular Phones </p>
                         <p class="price">₹ 1,099</p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="Accesories" >
                     <img src="img/Accesories/buds2.webp" alt="">
                     <div class="info">
                         <p class="name">Galaxy Buds2 Pro, lavender</p>
                         <p class="price">₹ 15,990</p>
                         <p class="spec"> 360 audio | ANC | touch gestures</p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-                <div class="item">
+                <div class="item" category="Accesories" >
                     <img src="img/Accesories/magsafe.jpeg" alt="">
                     <div class="info">
                         <p class="name">
                             Mobile Battery Apple MagSafe Battery Pack</p>
                         <p class="price">₹ 3,200</p>
+                        <p class="spec"></p>
                     </div>
-                    <Button onclick="addc()">Add to cart</Button>
+                    <Button onclick="addc()" class =  "btn1">Add to cart</Button>
                 </div>
-               </div>
+            </div>
         </body>
 </html>
 

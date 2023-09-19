@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color: black;
+    display: flex;
+    height: 49px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+nav a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+}
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+#status {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+}
+.container {
+    background-color: rgb(221, 223, 223,0.7);
+    max-width: 800px;
+    border-radius: 50px;
+    min-height: 399px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+/* Your existing CSS code before the media query */
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        height: auto;
+        padding: 10px 0;    
+    }
+    
+    nav a {
+      margin: 10px 0;
+      margin-right: 0;
+    }
+  
+    .header {
+        display: flex;
+        align-items: center;
+    }
+    .header a{
+        padding-left: 40px;
+    }
+    .header div {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    table {
+      margin-top: 10px;
+    }
+  
+    th,
+    td {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .container {
+      padding: 10px;
+      margin: 9px;
+      max-width: 100%;
+    }
+  
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  
